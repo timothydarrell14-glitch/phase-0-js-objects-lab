@@ -21,11 +21,13 @@ function logTicketPrice(attendee){
 function updateTicketType(attendee){
   let newTicket = "Regular"
   attendee.ticketType = newTicket
+  return newTicket
 }
 
 function updateTicketPrice(attendee){
   let newTicket = 100.00
   attendee.ticketPrice = newTicket
+  return newTicket
 }
 
 function removeEventProperty(attendee){
