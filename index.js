@@ -8,51 +8,33 @@ let attendee = {
   ticketPrice: 150.00,
 }
 
-
-
 function logAttendeeName(attendee){
-  let name = attendee.name
+  let name = attendee
   return name 
 }
-console.log(logAttendeeName(attendee.name))
-
-
 
 function logTicketPrice(attendee){
-  let price = attendee.ticketPrice
+  let price = attendee
   return price
 }
-console.log(logAttendeeName(attendee.ticketPrice))
-
-
 
 function updateTicketType(attendee){
-  attendee.ticketType = ["Regular"]
+  let newTicket = "Regular"
+  attendee.ticketType = newTicket
 }
-console.log(updateTicketType)
-
-
 
 function updateTicketPrice(attendee){
-  attendee.ticketPrice = [100]
+  let newTicket = 100.00
+  attendee.ticketPrice = newTicket
 }
-console.log(updateTicketPrice)
-
-
 
 function removeEventProperty(attendee){
   delete attendee.event
 }
 
-
-
 function addCheckedInProperty(attendee){
   attendee.checkedIn = "True"
 }
-console.log(addCheckedInProperty(attendee))
-
-
-console.log(attendee)
 
 //Needed for the tests to work. Don't modify
 module.exports = {
